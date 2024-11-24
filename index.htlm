@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirección del Reporte</title>
+    <script>
+        // Detectar ancho de la pantalla
+        if (window.innerWidth < 768) {
+            // Redirigir a la versión móvil
+            window.location.href = "https://bit.ly/reporte-movil";
+        } else {
+            // Redirigir a la versión de escritorio
+            window.location.href = "https://bit.ly/reporte-escritorio";
+        }
+    </script>
+</head>
+<body>
+    <!-- Mensaje de fallback -->
+    <p>Redirigiendo...</p>
+</body>
+</html>
