@@ -3,13 +3,18 @@
 <head>
     <title>Redirección del Reporte</title>
     <script>
-        // Detectar ancho de la pantalla
-        if (window.innerWidth < 768) {
+        // Función para detectar si es un dispositivo móvil
+        function esMovil() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+
+        // Redirigir según dispositivo
+        if (esMovil() || window.innerWidth < 768) {
             // Redirigir a la versión móvil
-            window.location.href = "https://www.eltiempo.es/madrid.html";
+            window.location.href = "https://www.futbolfantasy.com/";
         } else {
             // Redirigir a la versión de escritorio
-            window.location.href = "https://biwenger.as.com/?lang=es";
+            window.location.href = "https://www.youtube.com/";
         }
     </script>
 </head>
